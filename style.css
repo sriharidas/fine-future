@@ -6,6 +6,7 @@
     font-size: 18px;
 }
 
+
 .header{
     width:100vw;
    max-height: 100vh;
@@ -149,32 +150,46 @@
     position: absolute;
     top:0px;
     left:0px;
+    background-color: #e5e5e5 ;
+    min-height: 50vh;
 }
 .signin-form{
     position: absolute;
     top:0px;
     left:0px;
+    background-color: #e5e5e5 ;
+    min-height: 50vh;
+    
+
 }
 .login-form,.signin-form{
    visibility: hidden;
    z-index:5;
     width:100vw;
-    min-height:100vh;
+    height:fit-content;
     padding-top:200px;
 }
 
 .login-form-container,.signin-form-container{
  
     background:#e5e5e5;
-    width:40vw;
+    width:60vw;
     border-radius:20px ;
     /*box-shadow: 6px 6px 3px 3px #f1f1f1 inset;*/
-    max-height:800px;
-    margin:auto;
+    height:fit-content;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: -7% auto 0 auto;
+}
+.signin-form-container{
+   
+    align-content: flex-start;
 }
 
 .login-form-header,.signin-form-header{
-    width:80%;
+    width:97%;
     
 }
 .login-form-header h2,.signin-form-header h2{
@@ -199,7 +214,7 @@
     font-size: 20px;
 }
 .login-form-main,.signin-form-main{
-    width:100%;
+    width:50vw;
     height: fit-content;
     border-top: 2px solid green;
     min-height:200px;
@@ -208,7 +223,7 @@
 }
 .login-form-main label, .login-form-main input,
 .signin-form-main label,.signin-form-main input{
-    
+    width: 100%;
     display:block;
     margin: 20px 50px;
 }
@@ -217,6 +232,16 @@
     padding:5px 10px;
     border-radius:5px;
 }
+.login-form-main input[type="submit"], .signin-form-main input[type="submit"]{
+    color:#4910b4c2;
+    border:2px solid #4910b4c2;
+}
+.login-form-main input[type="submit"]:hover, .signin-form-main input[type="submit"]:hover{
+    color:#e5e5e5;
+    border:2px solid #4910b4c2;
+    background-color: #4910b4c2;
+}
+
 
 #login:target{
 
@@ -232,6 +257,24 @@
     visibility: hidden;
 }
 
+.log-switch{
+    border-top:2px solid green;
+    padding:20px 5px;
+    text-align: center;
+}
+.log-switch a{
+    color: purple;
+    text-decoration: none;
+}
+.log-switch a:hover{
+    text-decoration: underline;
+}
+.log-form-title{
+    text-align: center;
+    margin-bottom:20px ;
+    color:green;
+    font-size: 28px;
+}
 /* slider */
 .slider{
     position: relative;
@@ -459,13 +502,13 @@
 }
 /* Gallery */
 .home-gallery{
-    width:60vw;
+    width:80vw;
     max-height:350vh;
     display: flex;
    flex-wrap: wrap;
-   justify-content: center;
+   justify-content: flex-start;
    align-content: center;
-   align-items: flex-start;
+   align-items: center;
 
     margin:auto;
 }
@@ -660,17 +703,22 @@
 /* Contact us */
 
 .donate-us{
-    width:100vw;
+    width:65vw;
     position: relative;
+    margin: auto;
     background-color: #eee;
-
-
+}
+.donate-title{
+    width:100%;
 }
 .donate-us input
 {
     border-radius: 30px;
 }
-
+.contact-main{
+    min-height: 30vh;
+    overflow: hidden;
+}
 .donate-us input,
 .donate-us label,
 .donate-us select{
@@ -686,7 +734,9 @@
     margin: 15px auto;
     color:#fff;
 }
-
+.donate-us:nth-child(1){
+    color: red;
+}
 .donate-us form a{
     
     font-size: 18px;
@@ -697,15 +747,14 @@
 }
 
 .pay-title{
-    
-    display:flex;
-    justify-content: center;
+    display: flex;
     align-items: center;
-    align-content: center;
-    text-align: center;
+    justify-content: center;
+    width: 100%;
     background-color: #4910b4c2;
     color: #e5e5e5;
-    margin:15px auto;
+    text-align: center;
+    margin: auto;
 }
 .pay-title:nth-child(odd){
   width: 100%;
@@ -771,6 +820,8 @@
     color: #e5e5e5;
     text-decoration: none;
 }
+
+
 /*
 .slider-1{
     top:0;
@@ -818,8 +869,7 @@
         display: block;
     }
     .main-img{
-        height:60vh;
-
+        height:70vh;
         background-size: 100vw 100vh;
 
     }
@@ -835,7 +885,7 @@
         
         height: fit-content;
         margin: auto;
-        padding:15px;
+        padding:10px;
     }
     .main-cont-1 > div{
         width:90vw;
@@ -929,6 +979,7 @@
     #toggle-btn a{
         font-size: 34px;
     }
+  
     .header-bg {
         height: 80vh;
         z-index: 2;
@@ -964,16 +1015,27 @@
     margin:15px;
 
 }
+.login-form, .signin-form{
+    max-height: 170vh;
+}
 .login-form-container,.signin-form-container{
-    width:80%;
+   height: fit-content;
+    width:90%;
+    margin:0 auto;
 }
 .login-form-main input, .signin-form-main input{
-    width:70%;
+    width:100%;
+}
+.log-form-title{
+    text-align: center;
+    margin-bottom:20px ;
+    color:green;
+    font-size: 22px;
 }
     .home-gallery{
         width:90vw;
         padding: 0;
-        margin: auto ;
+        margin: 15px auto ;
     }
 
 
@@ -994,6 +1056,64 @@
     }
     .img-container{
         width:100vw;
+    }
+    .home-gallery{
+        width: 70vw;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .home-gallery-container > .gallery-img{
+        width: 150px;
+        height: 150px;
+    }
+    .home-gallery-container{
+        width: 150px;
+        height: 150px;
+        margin:5px 4px;
+        padding:0;
+    
+        margin-bottom: 20px;
+    }
+    
+    .gallery-img img{
+        width: 150px;
+        height: 150px;
+    }
+    .gallery-desc{
+        margin:0;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+   
+        
+    }
+    .health-cont-1{
+        width: 90%;
+        min-height: 20vh;
+        padding: 10px;
+  
+        
+    }
+    .health-cont-3{
+        width: 90%;
+        min-height: 20vh;
+        
+        
+    }
+    .health-cont-1 div, .health-cont-1 p,
+    .health-cont-3 div, .health-cont-1 p,
+    .health-cont-3 h2{
+        padding: 10px;
+        width: 90%;
+    }
+    .health-content div,
+    .health-content p{
+        width: 100%;
+        padding:5px;
+        margin: 0;
     }
     .service-quote > q{
        
@@ -1028,6 +1148,7 @@
     }
     .donate-us{
         width: 100%;
+        overflow: hidden;
     }
     .donate-us form label,
     .donate-us form select,
@@ -1038,6 +1159,7 @@
          padding: 8px;
    }
    .pay-down{
+       width: auto;
        top:15px;
        right: -30%;
    }
@@ -1054,7 +1176,7 @@
 .footer-top{
     width: 100%;
     height: auto;
-    flex-direction: column;
+    flex-direction: row;
     justify-content:center;
     align-content: flex-start;
     align-items: center;
@@ -1066,10 +1188,12 @@
     margin: 10px;
 }
 .footer-top-left{
-width: 100%;
+    width: 40%;
    margin: 10px;
 }
-
+.footer-top-right{
+    flex-wrap: wrap;
+}
 .footer-sm{
 width: 100%;
    margin: auto;
@@ -1086,15 +1210,46 @@ width: 100%;
     align-content: center;
     flex-direction: row;
 }
-.footer-contact > div{
-    font-size: 22px;
-    font-weight: bold;
-}
+
 .footer-email div{
    display: flex;
    flex-direction: column;
 }
-
+.contact-main .main-content .main-cont-1 h2{
+    width: 100%;
+    margin:auto;
+}
+.donate-us{
+    width: 80vw;
+}
+.contact-main{
+    overflow: hidden;
+}
+.contact-main div,
+.contact-main p
+{
+ margin:0;
+ padding: 5px;
+}
+ .contact-main .main-cont-1 div{
+     width: 100%;
+ }
+ .contact-main{
+     width: 100vw;
+     background-color: transparent;
+ }
+ .contact-main h2{
+     width: 100%;
+ }
+ .contact-main .main-content{
+     width: 100vw;
+     margin: 0;
+     padding: 0;
+ }
+.contact-main .main-cont-1{
+    width: 90%;
+    margin: 7px auto;
+}
 
 }
 
@@ -1152,17 +1307,18 @@ width: 100%;
     }
     .login-form-container, .signin-form-container{
         width: 85vw;
-        max-height: 600px;
+        max-height: 120vh;
+        margin:auto;
     }
     .login-form, .login-form-main{
-       
         padding: 0;
         margin:10px 5px;
     }
     .login-form-main, .signin-form-main{
         padding: 20px;
-        margin-bottom:50px;
+        margin-bottom:10px;
     }
+    
     
     /*
     .login{
@@ -1196,7 +1352,30 @@ width: 100%;
     .main-content > h2{
         padding-left:20px;
     }
-  
+    .log-form-title{
+      display: none;
+    }
+    .login-form-container, .signin-form-container{
+        width: 90%;
+        margin:0 auto;
+    }
+    .login-form-main,
+    .signin-form-main{
+        width: 270px;
+    }
+    .login-form-main label, .login-form-main input,
+.signin-form-main label,.signin-form-main input{
+    width: fit-content;
+}
+.login-form-main input[type="submit"],
+.signin-form-main input[type="submit"]{
+    
+    margin:auto;
+}
+    .login div{
+        margin:0;
+        padding:0;
+    }
     .slider{
        
         width: 100vw;
@@ -1215,7 +1394,6 @@ width: 100%;
         width:100vw;
        
     }
-  
     .footer-top{
         width: 100%;
         height: auto;
@@ -1223,9 +1401,6 @@ width: 100%;
         justify-content:center;
         align-content: flex-start;
         align-items: center;
-    
-
-
     }
     .footer-top > div{
         margin: 10px;
@@ -1237,47 +1412,53 @@ width: 100%;
   
    .footer-sm{
     width: 100%;
-       margin: auto;
-       justify-content: center;
+       justify-content: flex-start;
        align-items:center;
        align-content: space-around;
        flex-direction: row;
    }
    .footer-contact{
-       width: 100%;
-       justify-content: flex-start;
-       
+       width: 90%;
+       justify-content: flex-start;    
+       align-items:center;
    }
    .footer-email div{
        display: flex;
        flex-direction: column;
+       
    }
     .home-gallery{
-        justify-content: space-around;
+        width: 90vw;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
     .home-gallery-container > .gallery-img{
-        width: 100px;
-        height: 100px;
+        width: 150px;
+        height: 150px;
     }
     .home-gallery-container{
-        width:100px;
+        width: 150px;
+        height: 150px;
         margin:5px 4px;
         padding:0;
-        height:100px;
+    
         margin-bottom: 20px;
     }
     
     .gallery-img img{
-        width:100px;
-        height:100px;
+        width: 150px;
+        height: 150px;
     }
     .gallery-desc{
         margin:0;
-        width:100px;
-
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         padding:0;
-        padding-top:15px;
-        height: 100px;
+   
+        
     }
     .health-img{
         height: 60vh;
@@ -1393,12 +1574,18 @@ width: 100%;
    .donate-us input[type="submit"]{
        width:80%;
    }
+   .contact-main{
+       overflow: hidden;
+   }
    .contact-main div,
    .contact-main p
 {
     margin:0;
     padding: 5px;
 }
+    .contact-main .main-cont-1 div{
+        width: 100%;
+    }
 .pay-down {
     width:fit-content;
     height: auto;

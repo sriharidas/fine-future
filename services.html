@@ -66,21 +66,29 @@
     </div>
      
     
+  
     <div class="login-form" id="login">
         <div class="login-form-container" id="login-close">
-            <div class="login-form-header">
-                <h2>Login Form</h2>
-                <span><a href="#login-close">X</a></span>
+            <div>
+                <div><h2 class="main-content-title log-form-title" >Welcome! Log in to continue...</h2></div>
+                <div class="login-form-header">
+                    <h2>Login Form</h2>
+                    <span><a href="#login-close">X</a></span>
+                </div>
+                <div style="clear:both;"></div>
+                <form action="#" class="login-form-main">
+                    <label for="uemail">Email address</label>
+                    <input type="email" id="uemail"name="upwd" placeholder="Enter your email address">
+                    <label for="upwd">Password</label>
+                    <input type="password" id="upwd" name="upwd" placeholder="Enter your password">
+                    <input type="submit">
+        
+                </form>
+                <div class="log-switch">
+                    <p>New to  our community. click here to create a new account <a href="#signin">Sign Up</a></p>
+                </div>
             </div>
-            <div style="clear:both;"></div>
-            <form action="#" class="login-form-main">
-                <label for="uemail">Email address</label>
-                <input type="email" id="uemail"name="upwd" placeholder="Enter your email address">
-                <label for="upwd">Password</label>
-                <input type="password" id="upwd" name="upwd" placeholder="Enter your password">
-                <input type="submit">
-    
-            </form>
+           
         </div>
        
     </div>
@@ -88,12 +96,15 @@
     
     <div class="signin-form" id="signin">
         <div class="signin-form-container" id="signin-close">
+          <div>
+            <div><h2 class="main-content-title log-form-title" >Create your new account to be a part of our group...</h2></div>
             <div class="signin-form-header">
                 <h2>Sign in Form</h2>
                 <span><a href="#signin-close">X</a></span>
             </div>
             <div style="clear:both;"></div>
             <form action="#" class="signin-form-main">
+                
                 <label for="fname">First name</label>
                 <input type="text" id="fname" name="fname" placeholder="Enter your first name">
                 <label for="lname">Last name</label>
@@ -107,6 +118,10 @@
                 <input type="submit">
     
             </form>
+            <div class="log-switch">
+                <p>Already have an account. click here to <a href="#login">Log in</a></p>
+            </div>
+          </div>
         </div>
        
     </div>

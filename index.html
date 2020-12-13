@@ -67,22 +67,29 @@
             </div>
     </div>
      
-    
+ 
     <div class="login-form" id="login">
         <div class="login-form-container" id="login-close">
-            <div class="login-form-header">
-                <h2>Login Form</h2>
-                <span><a href="#login-close">X</a></span>
+            <div>
+                <div><h2 class="main-content-title log-form-title" >Welcome! Log in to continue...</h2></div>
+                <div class="login-form-header">
+                    <h2>Login Form</h2>
+                    <span><a href="#login-close">X</a></span>
+                </div>
+                <div style="clear:both;"></div>
+                <form action="#" class="login-form-main">
+                    <label for="uemail">Email address</label>
+                    <input type="email" id="uemail"name="upwd" placeholder="Enter your email address">
+                    <label for="upwd">Password</label>
+                    <input type="password" id="upwd" name="upwd" placeholder="Enter your password">
+                    <input type="submit">
+        
+                </form>
+                <div class="log-switch">
+                    <p>New to  our community. click here to create a new account <a href="#signin">Sign Up</a></p>
+                </div>
             </div>
-            <div style="clear:both;"></div>
-            <form action="#" class="login-form-main">
-                <label for="uemail">Email address</label>
-                <input type="email" id="uemail"name="upwd" placeholder="Enter your email address">
-                <label for="upwd">Password</label>
-                <input type="password" id="upwd" name="upwd" placeholder="Enter your password">
-                <input type="submit">
-    
-            </form>
+           
         </div>
        
     </div>
@@ -90,12 +97,15 @@
     
     <div class="signin-form" id="signin">
         <div class="signin-form-container" id="signin-close">
+          <div>
+            <div><h2 class="main-content-title log-form-title" >Create your new account to be a part of our group...</h2></div>
             <div class="signin-form-header">
                 <h2>Sign in Form</h2>
                 <span><a href="#signin-close">X</a></span>
             </div>
             <div style="clear:both;"></div>
             <form action="#" class="signin-form-main">
+                
                 <label for="fname">First name</label>
                 <input type="text" id="fname" name="fname" placeholder="Enter your first name">
                 <label for="lname">Last name</label>
@@ -109,6 +119,10 @@
                 <input type="submit">
     
             </form>
+            <div class="log-switch">
+                <p>Already have an account. click here to <a href="#login">Log in</a></p>
+            </div>
+          </div>
         </div>
        
     </div>
@@ -310,39 +324,39 @@
             <div><div>Contact</div><div class="footer-email"><span>Srihari.cs19@bitsathy.ac.in</span></div></div>
         </div>
         
+        
     </div>
    <div class="map">
-        <h2 class="main-content-title" >Branches</h2>
-        <div class="img-container">
-            <map name="map" id="map">
-                <area target="" alt="Fine Future Corp., Tokyo" title="Fine Future Corp., Tokyo" href="#map" coords="1067,330,1114,358" shape="rect">
-        <area target="_self" alt="Fine Future Corp., Beijing" title="Fine Future Corp., Beijing" href="#map" coords="988,308,1032,343" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Singapore" title="Fine Future Corp., Singapore" href="#map" coords="991,465,956,505" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Kolkata" title="Fine Future Corp., Kolkata" href="#map" coords="898,383,937,410" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Chennai" title="Fine Future Corp., Chennai" href="#map" coords="866,422,901,445" shape="rect">
-        <area target="#map" alt="Fine Future Corp., New Delhi" title="Fine Future Corp., New Delhi" href="#map" coords="857,355,882,388" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Mumbai" title="Fine Future Corp., Mumbai" href="#map" coords="837,398,870,419" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Stevenson" title="Fine Future Corp., Stevenson" href="#map" coords="556,209,620,248" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Paris" title="Fine Future Corp., Paris" href="#map" coords="584,274,630,310,37,634,35,633,37,634" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Stafford" title="Fine Future Corp., Stafford" href="#map" coords="543,251,653,273" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Los Angeles" title="Fine Future Corp., Los Angeles" href="#map" coords="163,340,197,374" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Chicago" title="Fine Future Corp., Chicago" href="#map" coords="251,296,292,348" shape="rect">
-        <area target="#map" alt="Fine Future Corp., San Francisco" title="Fine Future Corp., San Francisco" href="#map" coords="232,401,288,435" shape="rect">
-        <area target="#map" alt="Fine Future Corp., San Diego" title="Fine Future Corp., San Diego" href="#map" coords="326,419,396,474" shape="rect">
-        <area target="#map" alt="Fine Future Corp., New London" title="Fine Future Corp., New Canada" href="#map" coords="297,291,359,346" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Los Andes" title="Fine Future Corp., Los Andes" href="#map" coords="304,583,346,654" shape="rect">
-        <area target="#map" alt="Fine Future Corp., Akabira" title="Fine Future Corp., Akabira" href="#map" coords="1080,284,1176,323" shape="rect">
-        <area target="#map" alt="Fine Future Corp., San Francisco" title="Fine Future Corp., San Francisco" href="#map" coords="359,581,411,626" shape="rect">
-    </map>
+    <h2 class="main-content-title" style="border-top:1px solid white;height:60px;padding:20px;text-align: center;">Branches</h2>
+    <div class="img-container">
+            <img src="./img/map-1.png" alt="" usemap="#map">
+
         </div>
         
-
-  
+        <map name="map" id="map">
+            <area target="" alt="Fine Future Corp., Tokyo" title="Fine Future Corp., Tokyo" href="#map" coords="1067,330,1114,358" shape="rect">
+    <area target="_self" alt="Fine Future Corp., Beijing" title="Fine Future Corp., Beijing" href="#map" coords="988,308,1032,343" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Singapore" title="Fine Future Corp., Singapore" href="#map" coords="991,465,956,505" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Kolkata" title="Fine Future Corp., Kolkata" href="#map" coords="898,383,937,410" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Chennai" title="Fine Future Corp., Chennai" href="#map" coords="866,422,901,445" shape="rect">
+    <area target="#map" alt="Fine Future Corp., New Delhi" title="Fine Future Corp., New Delhi" href="#map" coords="857,355,882,388" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Mumbai" title="Fine Future Corp., Mumbai" href="#map" coords="837,398,870,419" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Stevenson" title="Fine Future Corp., Stevenson" href="#map" coords="556,209,620,248" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Paris" title="Fine Future Corp., Paris" href="#map" coords="584,274,630,310,37,634,35,633,37,634" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Stafford" title="Fine Future Corp., Stafford" href="#map" coords="543,251,653,273" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Los Angeles" title="Fine Future Corp., Los Angeles" href="#map" coords="163,340,197,374" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Chicago" title="Fine Future Corp., Chicago" href="#map" coords="251,296,292,348" shape="rect">
+    <area target="#map" alt="Fine Future Corp., San Francisco" title="Fine Future Corp., San Francisco" href="#map" coords="232,401,288,435" shape="rect">
+    <area target="#map" alt="Fine Future Corp., San Diego" title="Fine Future Corp., San Diego" href="#map" coords="326,419,396,474" shape="rect">
+    <area target="#map" alt="Fine Future Corp., New London" title="Fine Future Corp., New Canada" href="#map" coords="297,291,359,346" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Los Andes" title="Fine Future Corp., Los Andes" href="#map" coords="304,583,346,654" shape="rect">
+    <area target="#map" alt="Fine Future Corp., Akabira" title="Fine Future Corp., Akabira" href="#map" coords="1080,284,1176,323" shape="rect">
+    <area target="#map" alt="Fine Future Corp., San Francisco" title="Fine Future Corp., San Francisco" href="#map" coords="359,581,411,626" shape="rect">
+</map>
         
     </div>
-</body>
-</div>
-  
+    </div>
+    </div>
    
 </body>
 </html>
